@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Billionaire - Eureka Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #note-container {
+            text-align: center;
+            cursor: pointer;
+        }
+        #message {
+            display: none;
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: green;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        function showMessageAndRedirect() {
+            // Show message
+            document.getElementById("message").style.display = "block";
+
+            // After 3 seconds, redirect to the Eureka website
+            setTimeout(function() {
+                window.location.href = "https://www.eurekainnovation.org"; // Replace with the actual Eureka registration page
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <div id="note-container" onclick="showMessageAndRedirect()">
+        <img src="" alt="Who is the next billionaire?">
+        <div id="message">Register for Eureka and become the next billionaire!</div>
+    </div>
+</body>
+</html>
